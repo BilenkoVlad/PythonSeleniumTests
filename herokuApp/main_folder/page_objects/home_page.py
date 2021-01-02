@@ -1,11 +1,11 @@
 from selenium.webdriver.common.by import By
-from resources.TestData import TestData
+from herokuApp.resources.TestData import TestData
 
 
-class HomePage():
+class home_page:
     def __init__(self, driver):
         self.driver = driver
         self.driver.get(TestData.BASE_URL)
 
-    def clickOnLink(self, name):
+    def click_on_link(self, name):
         self.driver.find_element(By.XPATH, f"//*[contains(text(), '{name}')]").click()
