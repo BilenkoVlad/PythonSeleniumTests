@@ -35,6 +35,6 @@ def email_generator() -> str:
     return email + "@mailinator.com"
 
 
-class TestData():
+class TestData:
     CHROME_EXECUTABLE_PATH = "resources/drivers/chromedriver.exe"
     BASE_URL = "https://the-internet.herokuapp.com"
